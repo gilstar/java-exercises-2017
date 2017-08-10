@@ -5,13 +5,10 @@ import java.util.*;
 /**
  * Created by yaakov on 8/1/17.
  */
+
 public class CollectionsPlayground {
 
     public static void main(String[] args) {
-
-        System.out.println("hello world");
-        System.out.println("hello world");
-        System.out.println("Start list collection");
         ArrayList<String> stringList = new ArrayList<String>();
         stringList.add("hello");
         stringList.add("world");
@@ -23,14 +20,24 @@ public class CollectionsPlayground {
         // this is how we iterate over the whole list
         for(String s: stringList){
             System.out.println(s);
-        }
 
+
+        }
 
         System.out.println("");
         System.out.println("Start set collection");
         HashSet<String> stringSet = new HashSet<String>();
         stringSet.add("electric");
         stringSet.add("college");
+
+        stringSet.add("daniel");
+        stringSet.add("commit in master");
+
+=======
+        stringSet.add("collegess");
+        stringSet.add("college");
+        stringSet.add("college");
+
 
         // set members are not accessible individually, only by iterating through the set
         for(String s: stringSet){
@@ -42,8 +49,9 @@ public class CollectionsPlayground {
         HashMap<String, String> stringMap = new HashMap<String, String>();
         stringMap.put("city", "Hadera");
         stringMap.put("street", "HaShalom");
-
+        stringMap.put("street2", "HaShalom");
         // map members are accessible by key
+        String news = "";
         System.out.println("key: city; value: " + stringMap.get("city"));
         System.out.println("key: street; value: " + stringMap.get("street"));
 
