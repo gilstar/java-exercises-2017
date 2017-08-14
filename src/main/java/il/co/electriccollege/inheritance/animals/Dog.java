@@ -5,12 +5,13 @@ package il.co.electriccollege.inheritance.animals;
  */
 public class Dog extends Animal {
 
+
     public void motion() {
-        System.out.println("run");
+
     }
 
     public void flavor() {
-        System.out.println("gross");
+
     }
 
     @Override
@@ -21,5 +22,6 @@ public class Dog extends Animal {
     public int getVolume() {
         return 40;
     }
+
 
 }
