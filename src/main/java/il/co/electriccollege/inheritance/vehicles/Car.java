@@ -14,4 +14,17 @@ public class Car implements Noisable {
     public int getVolume() {
         return 0;
     }
+
+    // main
+    private String vehicleType;
+    public Car (String vehicle) {
+        this.vehicleType = vehicle;
+    }
+
+    public Integer getNumberOfWheels() {
+        return 4;
+    }
+
+
+
 }

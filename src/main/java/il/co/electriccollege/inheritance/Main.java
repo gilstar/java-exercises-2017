@@ -2,8 +2,11 @@ package il.co.electriccollege.inheritance;
 
 import il.co.electriccollege.inheritance.animals.Animal;
 import il.co.electriccollege.inheritance.animals.Dog;
+import il.co.electriccollege.inheritance.animals.Fish;
 import il.co.electriccollege.inheritance.faces.Noisable;
+import il.co.electriccollege.inheritance.faces.Submergeable;
 import il.co.electriccollege.inheritance.vehicles.Car;
+import il.co.electriccollege.inheritance.vehicles.Submarine;
 
 import java.util.ArrayList;
 
@@ -15,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Noisable> noisyThings = new ArrayList<Noisable>();
         noisyThings.add(new Dog());
-        noisyThings.add(new Car());
+        noisyThings.add(new Car("2"));
 
         for(Noisable n: noisyThings){
             n.makeNoise();
@@ -67,5 +70,16 @@ public class Main {
                 // check weather
             }
         };
+
+        Car aaa=new Car("car");
+        ArrayList<Submergeable> movments = new ArrayList<Submergeable >();
+        movments.add(new Fish());
+        movments.add(new Submarine("Yellow submarine"));
+
+        for(Submergeable n: movments){
+            n.howItMove();
+            System.out.println(n);
+        }
     }
+
 }

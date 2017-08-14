@@ -1,9 +1,11 @@
 package il.co.electriccollege.inheritance.animals;
 
+import il.co.electriccollege.inheritance.faces.Submergeable;
+
 /**
  * Created by yaakov on 8/10/17.
  */
-public class Fish extends Animal {
+public class Fish extends Animal implements Submergeable {
     String name;
 
     public Fish(String name){
@@ -34,4 +36,17 @@ public class Fish extends Animal {
         }
         return false;
     }
+    public Fish  () {
+        this.AnimalType = "Fish ";
+    }
+
+    public void howItMove() {
+        System.out.println("use Swiming");
+    }
+
+    @Override
+    public String toString() {
+        return "Fish{}";
+    }
+
 }

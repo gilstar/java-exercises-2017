@@ -18,4 +18,12 @@ public abstract class Animal implements Noisable{
     }
 
     public abstract int getVolume();
+
+    // mine
+    public String AnimalType;
+
+    public String getVehicleType() {
+        return this.AnimalType;
+    }
+
 }
